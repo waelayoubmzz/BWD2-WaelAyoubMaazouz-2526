@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desert Tourism — Contact</title>
+    <meta name="description" content="Get in touch to plan your desert adventure.">
+
+	 <link href="css/styles.css" rel="stylesheet">
+    <style>
+      body { scroll-padding-top: 5rem; }
+      .shadow-soft { box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.06); }
+    </style>
+
+    <style>
+      /* Toon validatiekleuren enkel op verplichte velden */
+      .was-validated .form-control:valid:not(:required),
+      .was-validated .form-select:valid:not(:required),
+      .was-validated .form-control:invalid:not(:required),
+      .was-validated .form-select:invalid:not(:required) {
+        border-color: var(--bs-border-color);
+        background-image: none;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+<nav>
+      <div>
+        <a href="index.html"><img src="img/logo.png" alt="Desert Tourism" height="28"></a>
+        <button type="button">
+          <span></span>
+        </button>
+        <div id="nav">
+          <ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li></ul>
+          <a href="index.html#tours">Bekijk tochten</a>
+        </div>
+      </div>
+    </nav>
+<main>
+  <nav>
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li>Contact</li>
+    </ol>
+  </nav>
+
+  <div>
+    <!-- LEFT: FORM, no card -->
+    <div>
+      <h1>Klaar voor je woestijnavontuur?</h1>
+      <p>Velden met * zijn verplicht. We antwoorden meestal binnen 24 uur.</p>
+
+      <form novalidate>
+        <div>
+          <label for="name">Volledige naam *</label>
+          <input type="text" id="name" required>
+          <div>Vul je naam in.</div>
+        </div>
+        <div>
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" placeholder="jij@voorbeeld.be" required>
+          <div>Geef een geldig e-mailadres op.</div>
+        </div>
+
+        <div>
+          <label for="phone">Telefoon</label>
+          <div>
+            <span>+</span>
+            <input type="tel" id="phone" placeholder="Landcode + nummer">
+          </div>
+        </div>
+
+        <div>
+          <label for="tour">Gewenste tocht</label>
+          <select id="tour">
+            <option selected disabled>Kies je avontuur…</option>
+            <option>Zonsondergang op de Duinen</option>
+            <option>Sterrengids Snelcursus</option>
+            <option>Oase Ontdekking</option>
+            <option>Kameelrace Deluxe</option>
+            <option>Zandstorm Surprise</option>
+            <option>Karavaan & Kampvuur</option>
+</select>
+        </div>
+
+        <div>
+          <label for="date">Gewenste datum *</label>
+          <input type="date" id="date" required>
+          <div>Kies een datum.</div>
+        </div>
+
+        <div>
+          <label for="people">Aantal personen *</label>
+          <div>
+            <span>👥</span>
+            <input type="number" id="people" min="1" max="20" required>
+            <span>p.</span>
+            <div>Geef een getal tussen 1 en 20.</div>
+          </div>
+        </div>
+
+        <!-- Budget slider with live badge -->
+        <div>
+          <label for="budget">Budget (per persoon)</label>
+          <div>
+            <span>Min: € 0</span><span>Max: € 2.000</span>
+          </div>
+          <div>
+            <input type="range" min="0" max="2000" step="50" id="budget" value="250">
+            <output id="budgetValue">€ 250</output>
+          </div>
+          <div>Schuif tot het ongeveer goed voelt — het is de woestijn, geen spreadsheet 😉.</div>
+        </div>
+
+        <div>
+          <label for="message">Bericht *</label>
+          <textarea id="message" rows="4" required placeholder="Vertel ons over je plannen... (we lezen graag wilde ideeën)"></textarea>
+          <div>Schrijf even een kort bericht.</div>
+        </div>
+
+        <div>
+          <label>Contactvoorkeur</label>
+          <div>
+            <input type="radio" name="contactPref" id="cp1" checked>
+            <label for="cp1">E-mail</label>
+          </div>
+          <div>
+            <input type="radio" name="contactPref" id="cp2">
+            <label for="cp2">Telefoon</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="datalist">Hoe heb je ons gevonden?</label>
+          <input list="sources" id="datalist" placeholder="Typ om te zoeken...">
+          <datalist id="sources">
+            <option value="Vriend">
+            <option value="Social media">
+            <option value="Reisblog">
+            <option value="Anders">
+          </datalist>
+        </div>
+
+        <div>
+          <div>
+            <input type="checkbox" value="" id="terms" required>
+            <label for="terms">Ik ga akkoord met de voorwaarden *</label>
+            <div>Akkoord gaan is verplicht.</div>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit">Avontuur starten 🚀</button>
+          <button type="reset">Leegmaken</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT: info + small map/photo -->
+    <aside>
+      <div>
+        <h2>Kantoor</h2>
+        <p>Sahara Road 10</p>
+        <p>Merzouga, Marokko</p>
+        <p>+212 555 11 22 33</p>
+        <p>hello@desert.tours</p>
+      </div>
+
+      <div>
+        <div>
+          <h2>Praktisch</h2>
+          <span>7/7</span>
+        </div>
+        <div>
+          <button type="button">
+            Antwoordtijd
+          </button>
+          <span tabindex="0">
+            <button type="button" disabled style="pointer-events: none;">Uren</button>
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <img src="img/photo1.jpg" alt="Kaart / sfeerbeeld" style="width:100%; height:180px; object-fit:cover;">
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <p>© Desert Tourism</p>
+      </footer>
+</main>
+
+</body>
+</html>
