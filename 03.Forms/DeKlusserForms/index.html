@@ -1,265 +1,538 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>HandigHuis Klusbedrijf – Slimme oplossingen voor elke klus</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desert Tourism — Contact</title>
+	<meta name="description" content="Get in touch to plan your desert adventure.">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+	<style>
+		:root {
+			--dt-yellow: #f5c518;
+			--dt-yellow-dark: #d4a90e;
+			--dt-dark: #111111;
+		}
+
+		body {
+			background-color: #f4f5f7;
+			scroll-padding-top: 5rem;
+		}
+
+		/* ── Navbar ── */
+		.navbar {
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.navbar-brand img {
+			height: 28px;
+		}
+
+		.nav-link {
+			font-weight: 500;
+			color: #222 !important;
+			font-size: .92rem;
+		}
+
+		.nav-link.active {
+			font-weight: 700;
+		}
+
+		.nav-link:hover {
+			color: var(--dt-yellow-dark) !important;
+		}
+
+		.btn-tours {
+			background-color: var(--dt-yellow);
+			border: none;
+			color: #111;
+			font-weight: 700;
+			font-size: .88rem;
+			padding: .45rem 1.1rem;
+			border-radius: 6px;
+		}
+
+		.btn-tours:hover {
+			background-color: var(--dt-yellow-dark);
+			color: #111;
+		}
+
+		/* ── Breadcrumb ── */
+		.breadcrumb-wrap {
+			background: #f4f5f7;
+			padding: .75rem 0 0;
+		}
+
+		.breadcrumb-item a {
+			color: #555;
+			text-decoration: none;
+			font-size: .83rem;
+		}
+
+		.breadcrumb-item.active {
+			font-size: .83rem;
+			color: #888;
+		}
+
+		.breadcrumb-item+.breadcrumb-item::before {
+			color: #aaa;
+		}
+
+		/* ── Page layout ── */
+		.contact-wrap {
+			padding: 1.75rem 0 3rem;
+		}
+
+		/* ── Form labels & inputs ── */
+		.form-label {
+			font-size: .83rem;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: .3rem;
+		}
+
+		.form-control,
+		.form-select {
+			font-size: .88rem;
+			border-color: #d0d3d9;
+		}
+
+		.form-control:focus,
+		.form-select:focus {
+			border-color: var(--dt-yellow);
+			box-shadow: 0 0 0 .2rem rgba(245, 197, 24, .2);
+		}
+
+		.input-group-text {
+			background: #f8f9fa;
+			border-color: #d0d3d9;
+			color: #555;
+			font-size: .88rem;
+		}
+
+		/* Budget slider */
+		.range-minmax {
+			display: flex;
+			justify-content: space-between;
+			font-size: .75rem;
+			color: #888;
+			margin-bottom: .3rem;
+		}
+
+		.range-row {
+			display: flex;
+			align-items: center;
+			gap: .75rem;
+		}
+
+		.form-range {
+			flex: 1;
+		}
+
+		.form-range::-webkit-slider-thumb {
+			background: #1a73e8;
+		}
+
+		.budget-badge {
+			background-color: var(--dt-yellow);
+			color: #111;
+			font-size: .8rem;
+			font-weight: 700;
+			border-radius: 4px;
+			padding: .2em .6em;
+			white-space: nowrap;
+		}
+
+		.form-text {
+			font-size: .77rem;
+			color: #888;
+		}
+
+		/* Validation */
+		.was-validated .form-control:valid:not(:required),
+		.was-validated .form-select:valid:not(:required),
+		.was-validated .form-control:invalid:not(:required),
+		.was-validated .form-select:invalid:not(:required) {
+			border-color: var(--bs-border-color);
+			background-image: none;
+			box-shadow: none;
+		}
+
+		/* Submit buttons */
+		.btn-submit {
+			background-color: var(--dt-yellow);
+			border: none;
+			color: #111;
+			font-weight: 700;
+			font-size: .95rem;
+			padding: .6rem 1.4rem;
+			border-radius: 6px;
+		}
+
+		.btn-submit:hover {
+			background-color: var(--dt-yellow-dark);
+			color: #111;
+		}
+
+		.btn-reset {
+			background: transparent;
+			border: 1px solid #ccc;
+			color: #444;
+			font-size: .88rem;
+			padding: .6rem 1rem;
+			border-radius: 6px;
+		}
+
+		.btn-reset:hover {
+			background: #f0f0f0;
+		}
+
+		/* ── Aside cards ── */
+		.aside-card {
+			background: #fff;
+			border: 1px solid #e3e5ea;
+			border-radius: 8px;
+			padding: 1.1rem 1.2rem;
+			margin-bottom: .9rem;
+		}
+
+		.aside-card h2 {
+			font-size: .95rem;
+			font-weight: 700;
+			margin-bottom: .6rem;
+			color: #111;
+		}
+
+		.aside-card p {
+			font-size: .85rem;
+			color: #444;
+			margin-bottom: .2rem;
+		}
+
+		.aside-card img {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+			border-radius: 6px;
+			display: block;
+		}
+
+		.praktisch-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: .75rem;
+		}
+
+		.badge-77 {
+			background-color: var(--dt-yellow);
+			color: #111;
+			font-size: .72rem;
+			font-weight: 700;
+			border-radius: 4px;
+			padding: .25em .6em;
+		}
+
+		.btn-prak {
+			background: transparent;
+			border: 1px solid #ccc;
+			color: #333;
+			font-size: .78rem;
+			padding: .28rem .75rem;
+			border-radius: 5px;
+			margin-right: .35rem;
+		}
+
+		.btn-prak:disabled {
+			opacity: .55;
+			pointer-events: none;
+		}
+
+		/* ── Footer ── */
+		footer {
+			background: #fff;
+			border-top: 1px solid #eee;
+			padding: 1.5rem 0;
+			text-align: center;
+		}
+
+		footer ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 .4rem;
+			display: flex;
+			justify-content: center;
+			gap: 1.2rem;
+			flex-wrap: wrap;
+		}
+
+		footer ul a {
+			font-size: .85rem;
+			color: #555;
+			text-decoration: none;
+		}
+
+		footer ul a:hover {
+			color: var(--dt-yellow-dark);
+		}
+
+		footer p {
+			font-size: .8rem;
+			color: #999;
+			margin: 0;
+		}
+	</style>
 </head>
 
 <body>
-	<header>
-		<div>
-			<a href="index.html#home">HandigHuis</a>
-			<ul>
-				<li>
-					<a href="#home">Home</a>
-				</li>
-				<li>
-					<a href="#diensten">Diensten</a>
-				</li>
-				<li>
-					<a href="#dagactie">Dagactie</a>
-				</li>
-				<li>
-					<a href="#reviews">Reviews</a>
-				</li>
-				<li>
-					<a href="#werkwijze">Werkwijze &amp; tarieven</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
 
-		</div>
-	</header>
-
-	<!-- HERO -->
-	<section id="home">
-		<div>
-			<div>
-				<div>
-					<h1>
-						HandigHuis Klusbedrijf – slimme oplossingen voor elke klus
-					</h1>
-					<p>
-						Bij HandigHuis combineren we vakmanschap met creativiteit.
-						Van kleine snelle fixes tot volledige make-overs: wij zorgen ervoor dat jouw huis
-						niet gewoon in orde is, maar écht goed voelt. Netjes, efficiënt, transparant —
-						en altijd met een glimlach.
-					</p>
-					<a href="offerte.html">Vraag een offerte</a>
-					<a href="#diensten">Bekijk onze diensten</a>
-				</div>
-				<div>
-					<img src="img/hero-klus.jpg" alt="Klusser aan het werk">
-				</div>
+	<!-- ══════════════════════════════
+         NAVBAR
+    ══════════════════════════════ -->
+	<nav class="navbar navbar-expand-md bg-white sticky-top py-2">
+		<div class="container">
+			<a class="navbar-brand me-3" href="index.html">
+				<img src="img/logo.png" alt="Desert Tourism" height="28">
+			</a>&
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+				aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navMain">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+				</ul>
+				<a href="index.html#tours" class="btn btn-tours mt-2 mt-md-0">Bekijk tochten</a>
 			</div>
 		</div>
-	</section>
+	</nav>
 
-	<!-- OVER ONS -->
-	<section>
-		<div>
-			<h2>Jouw betrouwbare kluspartner</h2>
-			<p>
-				Bij HandigHuis zijn we allergisch aan half afgewerkte projecten en rondslingerende to-do’s.
-				We houden ervan om alles wat blijft liggen op te lossen: een muur die opnieuw fris moet,
-				een kast die scheef hangt, verlichting die beter kan, een terras dat liefde nodig heeft…
-				Met meer dan 10 jaar ervaring in kleine renovaties, onderhoud en creatieve oplossingen zorgen
-				we ervoor dat elk project — groot of klein — plezierig, vlot en professioneel verloopt.
-				Onze klanten waarderen ons om onze heldere communicatie, stipte afspraken en puntgave afwerking.
-			</p>
-		</div>
-	</section>
+	<main>
 
-	<!-- DIENSTEN -->
-	<section id="diensten">
-		<div>
-			<h2>Diensten</h2>
-			<p>
-				Een greep uit wat we voor jou kunnen doen.
-			</p>
-			<div>
-				<div>
-					<div>
-						<img src="img/schilderwerken.jpg" alt="Schilderwerken">
-						<div>
-							<h5>Schilder- &amp; opfriswerken</h5>
-							<p>
-								Geef je interieur een frisse vibe! We herstellen muren, werken barstjes en gaatjes weg,
-								vernieuwen kleuren en zorgen dat je woonkamer, slaapkamer of kantoor opnieuw straalt
-								alsof het net uit een magazine komt. Binnen én buiten — met een afwerking waarop je trots kunt
-								zijn.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<img src="img/klus-montage.jpg" alt="Montage en kleine klussen">
-						<div>
-							<h5>Montage &amp; kleine klussen</h5>
-							<p>
-								Noem het, en wij fixen het. Meubels monteren, tv ophangen, gordijnrails en wandrekken plaatsen,
-								plinten zetten en kasten verankeren: alles wat jij lastig, tijdrovend of gewoon vervelend vindt,
-								doen wij met plezier én in recordtijd.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<img src="img/tuin-klus.jpg" alt="Tuin en buitenklussen">
-						<div>
-							<h5>Tuin amp; buitenklussen</h5>
-							<p>
-								Jouw buitenruimte verdient ook liefde! We herstellen terrassen, plaatsen tuinpoorten,
-								bouwen kleine houtconstructies en frissen alles op zodat je tuin weer een gezellige plek wordt.
-								Praktisch, stevig en helemaal in jouw stijl.
-							</p>
-						</div>
-					</div>
-				</div>
+		<!-- ── Breadcrumb ── -->
+		<div class="breadcrumb-wrap">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb mb-0">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Contact</li>
+					</ol>
+				</nav>
 			</div>
 		</div>
-	</section>
 
-	<!-- DAGACTIE -->
-	<section id="dagactie">
-		<div>
-			<h2>Dagactie</h2>
-			<div>
-				<div>
-					<div>
-						<div>
-							<p>Vandaag</p>
-							<h3>“Handige halve dag”-pakket</h3>
-							<p>
-								Soms verzamel je een lijst met kleine irritaties in huis: een deur die klemt,
-								een lamp die flikkert, een kast die bijna uit elkaar valt, een plint die loskomt…
-								Met ons Handige Halve Dag-pakket los je dat allemaal in één keer op.
-							</p>
-							<ul>
-								<li>✓ Eén vakman, 4 uur, duidelijke prijs</li>
-								<li>✓ Inclusief basisgereedschap en verplaatsing in de regio</li>
-								<li>✓ Ideaal om dat “stapeltje klussen” eindelijk weg te werken</li>
-							</ul>
+		<!-- ── Main content ── -->
+		<div class="contact-wrap">
+			<div class="container">
+				<div class="row g-4 align-items-start">
+
+					<!-- ── LEFT: Form ── -->
+					<div class="col-12 col-lg-8">
+						<h1 class="fw-bold mb-1" style="font-size:1.65rem;">Klaar voor je woestijnavontuur?</h1>
+						<p class="text-muted mb-4" style="font-size:.88rem;">Velden met * zijn verplicht. We antwoorden
+							meestal binnen 24 uur.</p>
+
+						<form novalidate id="contactForm">
+
+							<!-- Name + Email -->
+							<div class="row g-3 mb-3">
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="name">Volledige naam *</label>
+									<input type="text" class="form-control" id="name" required>
+									<div class="invalid-feedback">Vul je naam in.</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="email">E-mail *</label>
+									<input type="email" class="form-control" id="email" placeholder="jij@voorbeeld.be"
+										required>
+									<div class="invalid-feedback">Geef een geldig e-mailadres op.</div>
+								</div>
+							</div>
+
+							<!-- Phone + Tour -->
+							<div class="row g-3 mb-3">
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="phone">Telefoon</label>
+									<div class="input-group">
+										<span class="input-group-text">+</span>
+										<input type="tel" class="form-control" id="phone"
+											placeholder="Landcode + nummer">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="tour">Gewenste tocht</label>
+									<select class="form-select" id="tour">
+										<option selected disabled>Kies je avontuur…</option>
+										<option>Zonsondergang op de Duinen</option>
+										<option>Sterrengids Snelcursus</option>
+										<option>Oase Ontdekking</option>
+										<option>Kameelrace Deluxe</option>
+										<option>Zandstorm Surprise</option>
+										<option>Karavaan &amp; Kampvuur</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- Date + People -->
+							<div class="row g-3 mb-3">
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="date">Gewenste datum *</label>
+									<input type="date" class="form-control" id="date" required>
+									<div class="invalid-feedback">Kies een datum.</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="people">Aantal personen *</label>
+									<div class="input-group">
+										<span class="input-group-text">👥</span>
+										<input type="number" class="form-control" id="people" min="1" max="20" required>
+										<span class="input-group-text">p.</span>
+										<div class="invalid-feedback">Geef een getal tussen 1 en 20.</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Budget slider -->
+							<div class="mb-3">
+								<label class="form-label" for="budget">Budget (per persoon)</label>
+								<div class="range-minmax">
+									<span>Min: € 0</span>
+									<span>Max: € 2.000</span>
+								</div>
+								<div class="range-row">
+									<input type="range" class="form-range" min="0" max="2000" step="50" id="budget"
+										value="250">
+									<span class="budget-badge" id="budgetValue">€ 250</span>
+								</div>
+								<div class="form-text">Schuif tot het ongeveer goed voelt — het is de woestijn, geen
+									spreadsheet 😉.</div>
+							</div>
+
+							<!-- Message -->
+							<div class="mb-3">
+								<label class="form-label" for="message">Bericht *</label>
+								<textarea class="form-control" id="message" rows="4" required
+									placeholder="Vertel ons over je plannen... (we lezen graag wilde ideeën)"></textarea>
+								<div class="invalid-feedback">Schrijf even een kort bericht.</div>
+							</div>
+
+							<!-- Contact preference + How found (side by side) -->
+							<div class="row g-3 mb-3">
+								<div class="col-12 col-sm-6">
+									<label class="form-label d-block">Contactvoorkeur</label>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="contactPref" id="cp1"
+											checked>
+										<label class="form-check-label" for="cp1">E-mail</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="contactPref" id="cp2">
+										<label class="form-check-label" for="cp2">Telefoon</label>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label class="form-label" for="datalist">Hoe heb je ons gevonden?</label>
+									<input class="form-control" list="sources" id="datalist"
+										placeholder="Typ om te zoeken...">
+									<datalist id="sources">
+										<option value="Vriend">
+										<option value="Social media">
+										<option value="Reisblog">
+										<option value="Anders">
+									</datalist>
+								</div>
+							</div>
+
+							<!-- Terms checkbox -->
+							<div class="mb-4">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="terms" required>
+									<label class="form-check-label" for="terms" style="font-size:.88rem;">
+										Ik ga akkoord met de voorwaarden *
+									</label>
+									<div class="invalid-feedback">Akkoord gaan is verplicht.</div>
+								</div>
+							</div>
+
+							<!-- Submit / Reset -->
+							<div class="d-flex gap-2">
+								<button type="submit" class="btn btn-submit">Avontuur starten 🚀</button>
+								<button type="reset" class="btn btn-reset">Leegmaken</button>
+							</div>
+
+						</form>
+					</div>
+
+					<!-- ── RIGHT: Aside ── -->
+					<div class="col-12 col-lg-4">
+
+						<!-- Office info -->
+						<div class="aside-card">
+							<h2>Kantoor</h2>
+							<p>Sahara Road 10</p>
+							<p>Merzouga, Marokko</p>
+							<p>+212 555 11 22 33</p>
+							<p class="mb-0">hello@desert.tours</p>
+						</div>
+
+						<!-- Praktisch -->
+						<div class="aside-card">
+							<div class="praktisch-head">
+								<h2 class="mb-0">Praktisch</h2>
+								<span class="badge-77">7/7</span>
+							</div>
 							<div>
-								<p>€ 180 incl. btw</p>
-								<p>Op afspraak, beperkt aantal slots per dag.</p>
+								<button type="button" class="btn-prak">Antwoordtijd</button>
+								<button type="button" class="btn-prak" disabled>Uren</button>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- REVIEWS -->
-	<section id="reviews">
-		<div>
-			<h2>Wat klanten zeggen</h2>
-			<div>
-				<div>
-					<div>
-						<div>
-							<p>★★★★★</p>
-							<p>
-								“Onze living had dringend een opfrisbeurt nodig. Niet alleen ziet alles er nu super strak uit,
-								maar HandigHuis dacht actief mee over kleuren en kleine verbeteringen. Dat maakte echt het
-								verschil!”
-							</p>
-							<p>— Lien, Anderlecht</p>
+						<!-- Photo -->
+						<div class="aside-card p-0 overflow-hidden">
+							<img src="img/photo1.jpg" alt="Kaart / sfeerbeeld">
 						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<div>
-							<p>★★★★★</p>
-							<p>
-								“In één voormiddag: kast gemonteerd, verlichting geplaatst en nog wat herstellingen gedaan.
-								Zeer vriendelijk, snel én proper gewerkt. Topservice.”
-							</p>
-							<p>— Tom, Dilbeek</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<div>
-							<p>★★★★☆</p>
-							<p>
-								“Aangenaam contact en meedenkend. We kregen heel snel een afspraak en de werken zijn perfect
-								uitgevoerd.
-								Voor de volgende klus bellen we sowieso terug.”
-							</p>
-							<p>— Sarah, Jette</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- WERKWIJZE & TARIΕVEN -->
-	<section id="werkwijze">
-		<div>
-			<h2>Werkwijze &amp; tarieven</h2>
-			<div>
-				<div>
-					<h3>Hoe we werken</h3>
-					<ol>
-						<li>Je stuurt een bericht met je idee of probleem (foto’s zijn altijd handig!).</li>
-						<li>We bekijken samen de opties en geven een duidelijke richtprijs.</li>
-						<li>Indien nodig komen we ter plaatse voor een preciezere inschatting.</li>
-						<li>We plannen een datum in die voor jou past — flexibel en snel.</li>
-						<li>Je klus wordt netjes, efficiënt en veilig uitgevoerd.</li>
-						<li>Je ontvangt een transparante factuur zonder verborgen kosten.</li>
-					</ol>
-				</div>
-				<div>
-					<h3>Richttarieven</h3>
-					<ul>
-						<li><span>Uurtarief:</span> vanaf € 45 incl. btw (excl. materialen)</li>
-						<li><span>Halve dag (4u):</span> € 180 incl. btw</li>
-						<li><span>Volledige dag:</span> prijs op offerte</li>
-						<li>
-							Voor grotere projecten werken we met een vaste prijs, zodat je vooraf precies weet waar je aan toe
-							bent.
-						</li>
-					</ul>
-				</div>
-			</div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
 		</div>
-	</section>
 
-	<!-- CONTACT -->
-	<section id="contact">
-		<div>
-			<h2>Contact &amp; korte vraag</h2>
-			<div>
-				<div>
-					<p>
-						Heb je een eenvoudige vraag of wil je eerst even aftoetsen wat mogelijk is?
-						Gebruik dit formulier of ga meteen naar onze <a href="offerte.html">offertepagina</a> om een
-						uitgebreide aanvraag te doen.
-					</p>
-					<address>
-						<p><span>E-mail:</span> hallo@handighuis.be</p>
-						<p><span>Telefoon:</span> +32 (0)4 12 34 56 78</p>
-						<p><span>Regio:</span> Groot-Brussel en randgemeenten</p>
-					</address>
-				</div>
-			</div>
-		</div>
-	</section>
+		<!-- ── Footer ── -->
+		<footer>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Privacy</a></li>
+			</ul>
+			<p>© Desert Tourism</p>
+		</footer>
 
-	<footer>
-		HandigHuis Klusbedrijf © 2025 — Slimme oplossingen voor al je klussen in en rond het huis
-	</footer>
+	</main>
+
+	<!-- Bootstrap 5 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		// Live budget badge
+		const budgetSlider = document.getElementById('budget');
+		const budgetValue = document.getElementById('budgetValue');
+		budgetSlider.addEventListener('input', () => {
+			budgetValue.textContent = '€ ' + Number(budgetSlider.value).toLocaleString('nl-BE');
+		});
+
+		// Bootstrap form validation
+		document.getElementById('contactForm').addEventListener('submit', function (e) {
+			if (!this.checkValidity()) {
+				e.preventDefault();
+				e.stopPropagation();
+			}
+			this.classList.add('was-validated');
+		});
+	</script>
 </body>
 
 </html>
