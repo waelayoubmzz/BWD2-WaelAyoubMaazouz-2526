@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realisaties — GOGICON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{accent:'#c8ff00',dark:{DEFAULT:'#111111',2:'#1a1a1a',3:'#222222'}}}}}</script>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">GOGI<span>CON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Over ons</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="producten.html">Concepten</a></li>
+      <li><a href="realisaties.html" class="active">Realisaties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="vacatures.html">Jobs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">Over ons</a><a href="diensten.html">Diensten</a>
+    <a href="producten.html">Concepten</a><a href="realisaties.html">Realisaties</a>
+    <a href="contact.html">Contact</a><a href="vacatures.html">Jobs</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-grid" style="opacity:0.5"></div>
+    <div class="relative z-10 max-w-4xl">
+      <div class="section-tag">Portfolio</div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6" style="font-family:'Syne',sans-serif;line-height:1.1">Onze <em class="text-[#c8ff00] italic">realisaties</em></h1>
+      <p class="text-[#aaa] text-lg max-w-2xl leading-relaxed">Tien jaar futuristische architectuur samengevat in projecten die het landschap van de Benelux voorgoed veranderd hebben.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="max-w-7xl mx-auto pb-0" style="padding-bottom:0">
+    <div class="flex flex-wrap gap-3 mb-12">
+      <button class="filter-btn text-xs px-4 py-2 border border-[#c8ff00] text-[#c8ff00] uppercase tracking-wider font-medium transition-all hover:bg-[#c8ff00] hover:text-black bg-[#c8ff00]/10" data-filter="all">Alle</button>
+      <button class="filter-btn text-xs px-4 py-2 border border-white/10 text-[#aaa] uppercase tracking-wider font-medium transition-all hover:border-[#c8ff00] hover:text-[#c8ff00]" data-filter="helix">Helix</button>
+      <button class="filter-btn text-xs px-4 py-2 border border-white/10 text-[#aaa] uppercase tracking-wider font-medium transition-all hover:border-[#c8ff00] hover:text-[#c8ff00]" data-filter="monolith">Monolith</button>
+      <button class="filter-btn text-xs px-4 py-2 border border-white/10 text-[#aaa] uppercase tracking-wider font-medium transition-all hover:border-[#c8ff00] hover:text-[#c8ff00]" data-filter="symbiose">Symbiose</button>
+      <button class="filter-btn text-xs px-4 py-2 border border-white/10 text-[#aaa] uppercase tracking-wider font-medium transition-all hover:border-[#c8ff00] hover:text-[#c8ff00]" data-filter="prism">Prism</button>
+    </div>
+  </section>
+
+  <!-- PROJECTS GRID -->
+  <section class="max-w-7xl mx-auto" style="padding-top:0">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-item reveal" data-category="helix">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop" alt="Villa Helix">
+          <div class="project-overlay">
+            <span class="tag">Helix — Antwerpen — 2023</span>
+            <h3>Villa Helix</h3>
+            <p>Spiraalvormige structuur met dubbele helix als draagconstructie. 320m², 4 slaapkamers, energiepositief. Winnaar Belgian Architecture Award 2023.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-item reveal stagger-1" data-category="prism">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Huis Nebula">
+          <div class="project-overlay">
+            <span class="tag">Prism — Knokke — 2023</span>
+            <h3>Huis Nebula</h3>
+            <p>Zwevende volumes boven de duinen. Dichroïsch glas dat het zeelicht vangt en verspreidt door het hele interieur. 280m² met panoramisch zeezicht.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-item reveal stagger-2" data-category="prism">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop" alt="Woning Prism">
+          <div class="project-overlay">
+            <span class="tag">Prism — Gent — 2022</span>
+            <h3>Woning Prism</h3>
+            <p>De eerste Prism-realisatie. Lichtbrekende gevels die van kleur veranderen naargelang de tijd van de dag. 240m², volledig smart home geïntegreerd.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-item reveal" data-category="monolith">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop" alt="Blok Noir">
+          <div class="project-overlay">
+            <span class="tag">Monolith — Brussel — 2022</span>
+            <h3>Blok Noir</h3>
+            <p>Zwart zichtbeton en cortenstaal in het hart van Ukkel. Een brutalistische monoliet die als een kunstwerk in de wijk staat. 380m², 5 slaapkamers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-item reveal stagger-1" data-category="symbiose">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop" alt="Woning Fern">
+          <div class="project-overlay">
+            <span class="tag">Symbiose — Brasschaat — 2021</span>
+            <h3>Woning Fern</h3>
+            <p>Volledig omhuld door verticale groenwanden. De woning produceert meer zuurstof dan een gemiddeld bos per vierkante meter. 260m², energiepositief.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-item reveal stagger-2" data-category="helix">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop" alt="Villa Vortex">
+          <div class="project-overlay">
+            <span class="tag">Helix — Luxemburg — 2021</span>
+            <h3>Villa Vortex</h3>
+            <p>Ons eerste internationaal project. Parametrisch ontworpen vortex-structuur op een helling in de Ardennse bossen. 420m², zwembad geïntegreerd in ontwerp.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-item reveal" data-category="monolith">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop" alt="Cube Zero">
+          <div class="project-overlay">
+            <span class="tag">Monolith — Mechelen — 2020</span>
+            <h3>Cube Zero</h3>
+            <p>Het eerste volledig net-zero woonhuis van Vlaanderen. Een perfecte kubus met een kern van warmteopslag. 200m², bewijs dat duurzaam ook radicaal kan zijn.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="project-item reveal stagger-1" data-category="symbiose">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop" alt="Woning Moss">
+          <div class="project-overlay">
+            <span class="tag">Symbiose — Brugge — 2020</span>
+            <h3>Woning Moss</h3>
+            <p>Levende mosfacade die geluid absorbeert en de luchtkwaliteit verbetert. Geïntegreerd regenwatercircuit voedt de beplanting automatisch. 220m².</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="project-item reveal stagger-2" data-category="helix">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&h=600&fit=crop" alt="Résidence Spiraal">
+          <div class="project-overlay">
+            <span class="tag">Helix — Leuven — 2019</span>
+            <h3>Résidence Spiraal</h3>
+            <p>Klein maar krachtig: een Helix-woning op een compact stadsplot. Bewijs dat futuristische architectuur ook in de stad kan gedijen. 170m², 3 slaapkamers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="project-item reveal" data-category="monolith">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop" alt="Woning Basalt">
+          <div class="project-overlay">
+            <span class="tag">Monolith — Rotterdam — 2019</span>
+            <h3>Woning Basalt</h3>
+            <p>Ons eerste Nederlandse project. Donker basalt en vloeibaar glas in het havengebied. De woning lijkt te zweven boven een spiegelend waterbassin. 340m².</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal">
+        <div class="stat-number" data-count="147" data-suffix="+">0</div>
+        <div class="stat-label">Projecten voltooid</div>
+      </div>
+      <div class="reveal stagger-1">
+        <div class="stat-number" data-count="3">0</div>
+        <div class="stat-label">Landen actief</div>
+      </div>
+      <div class="reveal stagger-2">
+        <div class="stat-number" data-count="23">0</div>
+        <div class="stat-label">Awards gewonnen</div>
+      </div>
+      <div class="reveal stagger-3">
+        <div class="stat-number" data-count="45000" data-suffix="m²">0</div>
+        <div class="stat-label">Ontworpen</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-4xl mx-auto text-center reveal">
+    <h2 class="section-title mb-6">Jouw project als volgende?</h2>
+    <p class="text-[#aaa] max-w-xl mx-auto mb-8">Vertel ons over jouw droom en wij maken er een GOGICON-realisatie van.</p>
+    <a href="contact.html" class="btn btn-primary btn-arrow">Start jouw project</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="nav-logo mb-4 inline-block">GOGI<span>CON</span></a>
+        <p class="text-[#888] text-sm leading-relaxed mt-4">Futuristische architectuur die inspireert.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Navigatie</h4>
+        <div class="flex flex-col gap-2">
+          <a href="about.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Over ons</a>
+          <a href="diensten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Diensten</a>
+          <a href="producten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Concepten</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
+        <div class="flex flex-col gap-2 text-[#888] text-sm">
+          <span>Keizerslei 64, 2000 Antwerpen</span>
+          <a href="mailto:hello@gogicon.be" class="hover:text-[#c8ff00] transition-colors">hello@gogicon.be</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Volg ons</h4>
+        <div class="flex flex-col gap-2">
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Instagram</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom max-w-7xl mx-auto">
+      <span>© 2024 GOGICON. Alle rechten voorbehouden.</span>
+      <span>Ontworpen met visie.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('bg-[#c8ff00]/10');
+          b.classList.remove('border-[#c8ff00]');
+          b.classList.remove('text-[#c8ff00]');
+          b.classList.add('border-white/10', 'text-[#aaa]');
+        });
+        btn.classList.add('bg-[#c8ff00]/10', 'border-[#c8ff00]', 'text-[#c8ff00]');
+        btn.classList.remove('border-white/10', 'text-[#aaa]');
+
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-item').forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+            item.style.opacity = '0';
+            setTimeout(() => { item.style.opacity = '1'; }, 50);
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

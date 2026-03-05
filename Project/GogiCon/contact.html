@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — GOGICON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{accent:'#c8ff00',dark:{DEFAULT:'#111111',2:'#1a1a1a',3:'#222222'}}}}}</script>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">GOGI<span>CON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Over ons</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="producten.html">Concepten</a></li>
+      <li><a href="realisaties.html">Realisaties</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="vacatures.html">Jobs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">Over ons</a><a href="diensten.html">Diensten</a>
+    <a href="producten.html">Concepten</a><a href="realisaties.html">Realisaties</a>
+    <a href="contact.html">Contact</a><a href="vacatures.html">Jobs</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-grid" style="opacity:0.5"></div>
+    <div class="relative z-10 max-w-4xl">
+      <div class="section-tag">Contact</div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6" style="font-family:'Syne',sans-serif;line-height:1.1">Laten we <em class="text-[#c8ff00] italic">praten</em></h1>
+      <p class="text-[#aaa] text-lg max-w-2xl leading-relaxed">Vertel ons alles over jouw droomproject. Hoe meer detail, hoe beter wij je van dienst kunnen zijn. Wij nemen binnen 48 uur contact op.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <!-- CONTACT INFO -->
+      <div class="reveal">
+        <h3 class="text-xl font-bold mb-6" style="font-family:'Syne',sans-serif">Contactgegevens</h3>
+
+        <div class="mb-8">
+          <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-2">Adres</div>
+          <p class="text-[#aaa] text-sm leading-relaxed">Keizerslei 64<br>2000 Antwerpen<br>België</p>
+        </div>
+
+        <div class="mb-8">
+          <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-2">Telefoon</div>
+          <a href="tel:+3235551234" class="text-[#aaa] text-sm hover:text-white transition-colors">+32 3 555 12 34</a>
+        </div>
+
+        <div class="mb-8">
+          <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-2">E-mail</div>
+          <a href="mailto:hello@gogicon.be" class="text-[#aaa] text-sm hover:text-white transition-colors">hello@gogicon.be</a>
+        </div>
+
+        <div class="mb-8">
+          <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-2">Openingsuren</div>
+          <p class="text-[#aaa] text-sm leading-relaxed">Ma – Vr: 9:00 – 18:00<br>Za: op afspraak<br>Zo: gesloten</p>
+        </div>
+
+        <div>
+          <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-3">Volg ons</div>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#aaa] hover:border-[#c8ff00] hover:text-[#c8ff00] transition-all text-sm">IG</a>
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#aaa] hover:border-[#c8ff00] hover:text-[#c8ff00] transition-all text-sm">LI</a>
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#aaa] hover:border-[#c8ff00] hover:text-[#c8ff00] transition-all text-sm">PI</a>
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-[#aaa] hover:border-[#c8ff00] hover:text-[#c8ff00] transition-all text-sm">BE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="lg:col-span-2 reveal stagger-2">
+        <div class="bg-[#111] border border-white/5 p-8 md:p-12">
+          <h3 class="text-2xl font-bold mb-2" style="font-family:'Syne',sans-serif">Projectaanvraag</h3>
+          <p class="text-[#888] text-sm mb-8">Vul het formulier zo volledig mogelijk in. Velden met * zijn verplicht.</p>
+
+          <form data-validate>
+            <!-- Persoonlijke gegevens -->
+            <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-4 mt-2 font-semibold">Persoonlijke gegevens</div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="voornaam">Voornaam *</label>
+                <input type="text" id="voornaam" name="voornaam" required placeholder="Jan">
+              </div>
+              <div class="form-group">
+                <label for="naam">Naam *</label>
+                <input type="text" id="naam" name="naam" required placeholder="Janssens">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mailadres *</label>
+              <input type="email" id="email" name="email" required placeholder="jan@voorbeeld.be">
+            </div>
+
+            <div class="form-group">
+              <label for="telefoon">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="+32 4XX XX XX XX">
+            </div>
+
+            <!-- Adres -->
+            <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-4 mt-8 font-semibold">Adresgegevens</div>
+
+            <div class="form-group">
+              <label for="straat">Straat + huisnummer *</label>
+              <input type="text" id="straat" name="straat" required placeholder="Keizerslei 64">
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="form-group">
+                <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" name="postcode" required placeholder="2000">
+              </div>
+              <div class="form-group md:col-span-2">
+                <label for="gemeente">Gemeente *</label>
+                <input type="text" id="gemeente" name="gemeente" required placeholder="Antwerpen">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="land">Land</label>
+              <select id="land" name="land">
+                <option value="belgie" selected>België</option>
+                <option value="nederland">Nederland</option>
+                <option value="luxemburg">Luxemburg</option>
+                <option value="ander">Ander</option>
+              </select>
+            </div>
+
+            <!-- Project details -->
+            <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-4 mt-8 font-semibold">Projectdetails</div>
+
+            <div class="form-group">
+              <label for="concept">Gewenst concept</label>
+              <select id="concept" name="concept">
+                <option value="">— Kies een concept —</option>
+                <option value="helix">HELIX — Organisch Parametrisch</option>
+                <option value="monolith">MONOLITH — Brutalistisch Minimaal</option>
+                <option value="symbiose">SYMBIOSE — Biomimetisch Levend</option>
+                <option value="prism">PRISM — Lichtbreking & Transparantie</option>
+                <option value="custom">Custom / Weet ik nog niet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget (schuif om aan te passen) *</label>
+              <div class="flex items-center gap-4">
+                <input type="range" id="budget" name="budget" min="100000" max="3000000" step="50000" value="250000" class="flex-1">
+                <span id="budget-value" class="text-[#c8ff00] font-bold text-lg min-w-[140px] text-right" style="font-family:'Syne'">€250.000</span>
+              </div>
+              <div class="flex justify-between text-[#888] text-xs mt-1">
+                <span>€100.000</span>
+                <span>€3.000.000</span>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="slaapkamers">Aantal slaapkamers *</label>
+                <input type="number" id="slaapkamers" name="slaapkamers" required min="1" max="10" value="3" placeholder="3">
+              </div>
+              <div class="form-group">
+                <label for="badkamers">Aantal badkamers *</label>
+                <input type="number" id="badkamers" name="badkamers" required min="1" max="10" value="2" placeholder="2">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="oppervlakte">Gewenste oppervlakte (m²)</label>
+              <input type="number" id="oppervlakte" name="oppervlakte" min="80" max="1000" placeholder="bv. 250">
+            </div>
+
+            <!-- Wensen checkboxen -->
+            <div class="form-group">
+              <label>Wensenlijst (selecteer wat van toepassing is)</label>
+              <div class="checkbox-group mt-3">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="zwembad"> Zwembad
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="thuiskantoor"> Thuiskantoor
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="garage"> Garage / Carport
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="dakterras"> Dakterras
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="wijnkelder"> Wijnkelder
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="cinema"> Thuiscinema
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="wellness"> Sauna / Wellness
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="gym"> Fitnessruimte
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="groendak"> Groendak
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="zonnepanelen"> Zonnepanelen
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="warmtepomp"> Warmtepomp
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="smarthome"> Smart Home systeem
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="laadpaal"> Laadpaal EV
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="gastenverblijf"> Gastenverblijf
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="atelier"> Atelier / Studio
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="wensen" value="tuin"> Landschapsarchitectuur
+                </label>
+              </div>
+            </div>
+
+            <!-- Timing -->
+            <div class="text-xs uppercase tracking-wider text-[#c8ff00] mb-4 mt-8 font-semibold">Timing</div>
+
+            <div class="form-group">
+              <label for="startdatum">Wanneer wil je starten met je project? *</label>
+              <select id="startdatum" name="startdatum" required>
+                <option value="">— Kies een periode —</option>
+                <option value="zsm">Zo snel mogelijk</option>
+                <option value="3maanden">Binnen 3 maanden</option>
+                <option value="6maanden">Binnen 6 maanden</option>
+                <option value="1jaar">Binnen 1 jaar</option>
+                <option value="later">Later / Oriënterend</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="terrein">Heb je al een bouwgrond?</label>
+              <select id="terrein" name="terrein">
+                <option value="">— Selecteer —</option>
+                <option value="ja">Ja, ik heb al een terrein</option>
+                <option value="optie">Ik heb een terrein op het oog</option>
+                <option value="zoekend">Nee, ik zoek nog</option>
+                <option value="hulp">Ik wil hulp bij het zoeken</option>
+              </select>
+            </div>
+
+            <!-- Bericht -->
+            <div class="form-group mt-8">
+              <label for="bericht">Bijkomend bericht of vragen</label>
+              <textarea id="bericht" name="bericht" placeholder="Vertel ons meer over jouw visie, inspiraties, speciale wensen..."></textarea>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="form-group">
+              <label class="checkbox-item text-sm">
+                <input type="checkbox" name="nieuwsbrief" value="ja">
+                <span>Ja, ik wil me aanmelden voor de GOGICON nieuwsbrief met updates over projecten, trends en events.</span>
+              </label>
+            </div>
+
+            <!-- Privacy -->
+            <div class="form-group">
+              <label class="checkbox-item text-sm">
+                <input type="checkbox" name="privacy" required>
+                <span>Ik ga akkoord met het <a href="#" class="text-[#c8ff00] underline">privacybeleid</a> en de verwerking van mijn gegevens. *</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-arrow w-full justify-center mt-4">Verstuur aanvraag</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="nav-logo mb-4 inline-block">GOGI<span>CON</span></a>
+        <p class="text-[#888] text-sm leading-relaxed mt-4">Futuristische architectuur die inspireert.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Navigatie</h4>
+        <div class="flex flex-col gap-2">
+          <a href="about.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Over ons</a>
+          <a href="diensten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Diensten</a>
+          <a href="producten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Concepten</a>
+          <a href="realisaties.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Realisaties</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
+        <div class="flex flex-col gap-2 text-[#888] text-sm">
+          <span>Keizerslei 64, 2000 Antwerpen</span>
+          <a href="mailto:hello@gogicon.be" class="hover:text-[#c8ff00] transition-colors">hello@gogicon.be</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Volg ons</h4>
+        <div class="flex flex-col gap-2">
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Instagram</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom max-w-7xl mx-auto">
+      <span>© 2024 GOGICON. Alle rechten voorbehouden.</span>
+      <span>Ontworpen met visie.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

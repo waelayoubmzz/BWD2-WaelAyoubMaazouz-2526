@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diensten — GOGICON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{accent:'#c8ff00',dark:{DEFAULT:'#111111',2:'#1a1a1a',3:'#222222'}}}}}</script>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">GOGI<span>CON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Over ons</a></li>
+      <li><a href="diensten.html" class="active">Diensten</a></li>
+      <li><a href="producten.html">Concepten</a></li>
+      <li><a href="realisaties.html">Realisaties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="vacatures.html">Jobs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">Over ons</a><a href="diensten.html">Diensten</a>
+    <a href="producten.html">Concepten</a><a href="realisaties.html">Realisaties</a>
+    <a href="contact.html">Contact</a><a href="vacatures.html">Jobs</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-grid" style="opacity:0.5"></div>
+    <div class="relative z-10 max-w-4xl">
+      <div class="section-tag">Onze diensten</div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6" style="font-family:'Syne',sans-serif;line-height:1.1">Van droom tot <em class="text-[#c8ff00] italic">realiteit</em></h1>
+      <p class="text-[#aaa] text-lg max-w-2xl leading-relaxed">Wij begeleiden je doorheen het volledige traject: van het eerste visioen tot de sleuteloverdracht. Elke stap is doordacht, transparant en gericht op uitmuntendheid.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Service 1 -->
+      <div class="card reveal">
+        <div class="card-icon text-2xl">⬡</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Architecturaal Ontwerp</h3>
+        <p class="text-[#888] leading-relaxed mb-4">Van schets tot 3D-model: we ontwikkelen een volledig architecturaal ontwerp dat jouw visie vertaalt naar een bouwbaar meesterwerk. We werken met parametrische software, BIM-modellering en VR-walkthroughs zodat je je toekomstige woning kunt beleven vóór de eerste steen gelegd wordt.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Rhino & Grasshopper</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">BIM</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">VR Walkthrough</span>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="card reveal stagger-1">
+        <div class="card-icon text-2xl">◇</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Interieurarchitectuur</h3>
+        <p class="text-[#888] leading-relaxed mb-4">Een GOGICON-woning is pas compleet wanneer het interieur even vernieuwend is als de buitenkant. Onze interieurarchitecten ontwerpen custom meubels, lichtplannen en materiaalpaletten die naadloos aansluiten bij de architecturale visie.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Custom meubels</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Lichtontwerp</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Materiaaladvies</span>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="card reveal stagger-2">
+        <div class="card-icon text-2xl">△</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Duurzaamheidsengineering</h3>
+        <p class="text-[#888] leading-relaxed mb-4">Elk project wordt doorgelicht op energieprestatie, CO₂-voetafdruk en circulaire materialenkeuze. We streven naar BEN-norm (Bijna-EnergieNeutraal) als absolute minimum en net-zero als standaard. Onze bio-ingenieurs integreren hernieuwbare energiesystemen vanaf dag één.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Net-Zero</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">BREEAM</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">EPB-advies</span>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="card reveal stagger-3">
+        <div class="card-icon text-2xl">◈</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Smart Home Integratie</h3>
+        <p class="text-[#888] leading-relaxed mb-4">We ontwerpen AI-gestuurde woningsystemen die zich aanpassen aan jouw levensstijl. Van automatische verlichting en klimaatregeling tot beveiligingssystemen en energiemanagement — alles wordt architecturaal geïntegreerd, zonder zichtbare technologie.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">KNX / Loxone</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">AI-klimaat</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Energiemonitoring</span>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="card reveal stagger-4">
+        <div class="card-icon text-2xl">⊞</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Projectmanagement & Werfopvolging</h3>
+        <p class="text-[#888] leading-relaxed mb-4">Een visionair ontwerp verdient een vlekkeloze uitvoering. Ons projectmanagementteam coördineert alle aannemers, leveranciers en specialisten. Wekelijkse rapportage, strakke planning en budgetcontrole — zodat jij van het proces kunt genieten.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Werfcoördinatie</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Budgetbeheer</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Planning</span>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="card reveal stagger-5">
+        <div class="card-icon text-2xl">⟐</div>
+        <h3 class="text-xl mb-3" style="font-family:'Syne',sans-serif;font-weight:700">Stedenbouwkundig Advies</h3>
+        <p class="text-[#888] leading-relaxed mb-4">Vergunningen, bestemmingsplannen, erfgoedregels — wij navigeren het volledige stedenbouwkundige landschap voor je. Dankzij onze ervaring met onconventionele ontwerpen weten we precies hoe we ambitieuze projecten door het vergunningsproces loodsen.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Vergunningen</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Regelgeving</span>
+          <span class="text-xs px-3 py-1 border border-white/10 text-[#aaa]">Haalbaarheid</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-tag justify-center">Ons proces</div>
+      <h2 class="section-title">Hoe wij werken</h2>
+      <p class="section-desc mx-auto">Van eerste kennismaking tot sleuteloverdracht — een transparant traject in 5 fases.</p>
+    </div>
+    <div class="grid md:grid-cols-5 gap-4">
+      <div class="text-center reveal stagger-1">
+        <div class="text-4xl font-bold text-[#c8ff00] mb-3" style="font-family:'Syne'">01</div>
+        <h4 class="font-semibold text-sm mb-2">Kennismaking</h4>
+        <p class="text-[#888] text-xs leading-relaxed">Gratis intake om jouw visie, budget en verwachtingen te bespreken.</p>
+      </div>
+      <div class="text-center reveal stagger-2">
+        <div class="text-4xl font-bold text-[#c8ff00] mb-3" style="font-family:'Syne'">02</div>
+        <h4 class="font-semibold text-sm mb-2">Conceptontwerp</h4>
+        <p class="text-[#888] text-xs leading-relaxed">Schetsen, moodboards en eerste 3D-visualisaties van jouw droomwoning.</p>
+      </div>
+      <div class="text-center reveal stagger-3">
+        <div class="text-4xl font-bold text-[#c8ff00] mb-3" style="font-family:'Syne'">03</div>
+        <h4 class="font-semibold text-sm mb-2">Technisch Ontwerp</h4>
+        <p class="text-[#888] text-xs leading-relaxed">Gedetailleerde plannen, materiaalkeuze, en vergunningsaanvraag.</p>
+      </div>
+      <div class="text-center reveal stagger-4">
+        <div class="text-4xl font-bold text-[#c8ff00] mb-3" style="font-family:'Syne'">04</div>
+        <h4 class="font-semibold text-sm mb-2">Realisatie</h4>
+        <p class="text-[#888] text-xs leading-relaxed">Werfopvolging, kwaliteitscontrole en wekelijkse voortgangsrapportage.</p>
+      </div>
+      <div class="text-center reveal stagger-5">
+        <div class="text-4xl font-bold text-[#c8ff00] mb-3" style="font-family:'Syne'">05</div>
+        <h4 class="font-semibold text-sm mb-2">Oplevering</h4>
+        <p class="text-[#888] text-xs leading-relaxed">Sleuteloverdracht met aftercare-pakket en 2 jaar garantie op ontwerp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-4xl mx-auto text-center reveal">
+    <h2 class="section-title mb-6">Klaar om te starten?</h2>
+    <p class="text-[#aaa] max-w-xl mx-auto mb-8 leading-relaxed">Boek een gratis kennismakingsgesprek en ontdek wat GOGICON voor jouw project kan betekenen.</p>
+    <a href="contact.html" class="btn btn-primary btn-arrow">Neem contact op</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="nav-logo mb-4 inline-block">GOGI<span>CON</span></a>
+        <p class="text-[#888] text-sm leading-relaxed mt-4">Futuristische architectuur die inspireert.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Navigatie</h4>
+        <div class="flex flex-col gap-2">
+          <a href="about.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Over ons</a>
+          <a href="diensten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Diensten</a>
+          <a href="producten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Concepten</a>
+          <a href="realisaties.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Realisaties</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
+        <div class="flex flex-col gap-2 text-[#888] text-sm">
+          <span>Keizerslei 64, 2000 Antwerpen</span>
+          <span>+32 3 555 12 34</span>
+          <a href="mailto:hello@gogicon.be" class="hover:text-[#c8ff00] transition-colors">hello@gogicon.be</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Volg ons</h4>
+        <div class="flex flex-col gap-2">
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Instagram</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom max-w-7xl mx-auto">
+      <span>© 2024 GOGICON. Alle rechten voorbehouden.</span>
+      <span>Ontworpen met visie.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

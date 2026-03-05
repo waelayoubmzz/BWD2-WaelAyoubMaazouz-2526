@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOGICON — Futuristic Architecture</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#c8ff00',
+            dark: { DEFAULT: '#111111', 2: '#1a1a1a', 3: '#222222' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">GOGI<span>CON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">Over ons</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="producten.html">Concepten</a></li>
+      <li><a href="realisaties.html">Realisaties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="vacatures.html">Jobs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Over ons</a>
+    <a href="diensten.html">Diensten</a>
+    <a href="producten.html">Concepten</a>
+    <a href="realisaties.html">Realisaties</a>
+    <a href="contact.html">Contact</a>
+    <a href="vacatures.html">Jobs</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Architectuur van morgen — sinds 2014</div>
+      <h1>Wij bouwen de <em>toekomst</em></h1>
+      <p class="hero-desc">GOGICON ontwerpt futuristische woningen die technologie, duurzaamheid en radicale esthetiek samenbrengen. Elk project is een statement over hoe we morgen willen leven.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="realisaties.html" class="btn btn-primary btn-arrow">Bekijk realisaties</a>
+        <a href="contact.html" class="btn btn-outline">Start jouw project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="overflow-hidden py-8 border-y border-white/5">
+    <div class="marquee-track">
+      <span>Futurisme</span><span><em>•</em></span>
+      <span>Biomimicry</span><span><em>•</em></span>
+      <span>Smart Homes</span><span><em>•</em></span>
+      <span>Net Zero</span><span><em>•</em></span>
+      <span>Parametrisch</span><span><em>•</em></span>
+      <span>Modulair</span><span><em>•</em></span>
+      <span>Futurisme</span><span><em>•</em></span>
+      <span>Biomimicry</span><span><em>•</em></span>
+      <span>Smart Homes</span><span><em>•</em></span>
+      <span>Net Zero</span><span><em>•</em></span>
+      <span>Parametrisch</span><span><em>•</em></span>
+      <span>Modulair</span><span><em>•</em></span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <div class="section-tag">Wie zijn wij</div>
+        <h2 class="section-title">Architectuur die de regels <em class="text-[#c8ff00] italic">herschrijft</em></h2>
+        <p class="section-desc mb-6">GOGICON is geen gewoon architectenbureau. Wij zijn visionairs, ingenieurs en kunstenaars die geloven dat woningen niet enkel functioneel moeten zijn — ze moeten inspireren, provoceren en de grenzen van het mogelijke verleggen.</p>
+        <p class="text-[#888] leading-relaxed mb-8">Opgericht in 2014 in Antwerpen, zijn we uitgegroeid tot een referentie in futuristische residentiële architectuur in de Benelux. Elk project begint met een radicale vraag: wat als we alles anders doen?</p>
+        <a href="about.html" class="btn btn-outline btn-arrow">Meer over ons</a>
+      </div>
+      <div class="grid grid-cols-2 gap-4 reveal stagger-2">
+        <div class="bg-[#1a1a1a] border border-white/5 p-8 flex flex-col items-center text-center">
+          <div class="stat-number" data-count="147" data-suffix="+">0</div>
+          <div class="stat-label">Projecten</div>
+        </div>
+        <div class="bg-[#1a1a1a] border border-white/5 p-8 flex flex-col items-center text-center mt-8">
+          <div class="stat-number" data-count="10">0</div>
+          <div class="stat-label">Jaar ervaring</div>
+        </div>
+        <div class="bg-[#1a1a1a] border border-white/5 p-8 flex flex-col items-center text-center">
+          <div class="stat-number" data-count="23">0</div>
+          <div class="stat-label">Awards</div>
+        </div>
+        <div class="bg-[#1a1a1a] border border-white/5 p-8 flex flex-col items-center text-center mt-8">
+          <div class="stat-number" data-count="98" data-suffix="%">0</div>
+          <div class="stat-label">Tevreden klanten</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-tag justify-center">Wat wij doen</div>
+      <h2 class="section-title">Onze expertise</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card reveal stagger-1">
+        <div class="card-icon">⬡</div>
+        <h3>Parametrisch Ontwerp</h3>
+        <p>Algoritmisch gegenereerde vormen die organisch aanvoelen maar wiskundig perfect zijn. Elk oppervlak is geoptimaliseerd voor licht, ruimte en energie.</p>
+      </div>
+      <div class="card reveal stagger-2">
+        <div class="card-icon">◈</div>
+        <h3>Smart Home Integratie</h3>
+        <p>AI-gestuurde woningsystemen die leren van jouw levensstijl. Verlichting, klimaat, beveiliging — alles naadloos geïntegreerd in het ontwerp.</p>
+      </div>
+      <div class="card reveal stagger-3">
+        <div class="card-icon">△</div>
+        <h3>Net-Zero Woningen</h3>
+        <p>Energiepositieve huizen die meer produceren dan ze verbruiken. Geïntegreerde zonnepanelen, warmtepompen en slimme energieopslag.</p>
+      </div>
+    </div>
+    <div class="text-center mt-12 reveal">
+      <a href="diensten.html" class="btn btn-outline btn-arrow">Alle diensten bekijken</a>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6 reveal">
+      <div>
+        <div class="section-tag">Uitgelicht</div>
+        <h2 class="section-title">Recente realisaties</h2>
+      </div>
+      <a href="realisaties.html" class="btn btn-outline btn-arrow">Alle projecten</a>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="project-card reveal stagger-1">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop" alt="Villa Helix">
+        <div class="project-overlay">
+          <span class="tag">Residentieel — Antwerpen</span>
+          <h3>Villa Helix</h3>
+          <p>Spiraalvormig woonhuis met een dubbele helix als draagstructuur.</p>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-2">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Huis Nebula">
+        <div class="project-overlay">
+          <span class="tag">Villa — Knokke</span>
+          <h3>Huis Nebula</h3>
+          <p>Zwevende volumes boven de duinen met panoramisch zeezicht.</p>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-3">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop" alt="Woning Prism">
+        <div class="project-overlay">
+          <span class="tag">Nieuwbouw — Gent</span>
+          <h3>Woning Prism</h3>
+          <p>Lichtbrekende gevels die veranderen met de stand van de zon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#c8ff00]/5 to-transparent"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+      <div class="section-tag justify-center">Klaar om te beginnen?</div>
+      <h2 class="section-title mb-6">Laten we samen iets <em class="text-[#c8ff00] italic">buitengewoons</em> creëren</h2>
+      <p class="section-desc mx-auto mb-10">Elk visionair project begint met een gesprek. Vertel ons over jouw droom en wij maken er een architectonisch meesterwerk van.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="btn btn-primary btn-arrow">Neem contact op</a>
+        <a href="vacatures.html" class="btn btn-outline">Wij zoeken talent →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="nav-logo mb-4 inline-block">GOGI<span>CON</span></a>
+        <p class="text-[#888] text-sm leading-relaxed mt-4">Futuristische architectuur die inspireert. Gevestigd in Antwerpen, actief in de hele Benelux.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Navigatie</h4>
+        <div class="flex flex-col gap-2">
+          <a href="about.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Over ons</a>
+          <a href="diensten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Diensten</a>
+          <a href="producten.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Concepten</a>
+          <a href="realisaties.html" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Realisaties</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
+        <div class="flex flex-col gap-2 text-[#888] text-sm">
+          <span>Keizerslei 64, 2000 Antwerpen</span>
+          <span>+32 3 555 12 34</span>
+          <a href="mailto:hello@gogicon.be" class="hover:text-[#c8ff00] transition-colors">hello@gogicon.be</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Volg ons</h4>
+        <div class="flex flex-col gap-2">
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Instagram</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">LinkedIn</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Pinterest</a>
+          <a href="#" class="text-[#888] text-sm hover:text-[#c8ff00] transition-colors">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom max-w-7xl mx-auto">
+      <span>© 2024 GOGICON. Alle rechten voorbehouden.</span>
+      <span>Ontworpen met visie.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
